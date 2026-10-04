@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" role="img" aria-label="Logo Praxis Growth">
+  <!-- Símbolo P Abierta -->
+  <g transform="translate(6, 6)">
+    <!-- Base de fondo sutil o contorno si se requiere -->
+    <!-- Columna vertical superior y curva cerrada de la P -->
+    <path d="M14 44V8H27C33.5 8 38 12 38 19C38 26 33.5 30 27 30H20" 
+          fill="none" 
+          stroke="currentColor" 
+          stroke-width="4.8" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    <!-- Abertura inferior y conector verde crecimiento -->
+    <path d="M14 30V44" 
+          fill="none" 
+          stroke="#5EE38D" 
+          stroke-width="4.8" 
+          stroke-linecap="round"/>
+    <circle cx="20" cy="30" r="2.8" fill="#5EE38D"/>
+  </g>
+
+  <!-- Wordmark tipográfico -->
+  <g transform="translate(62, 10)">
+    <text x="0" y="22" font-family="'Manrope', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="20" letter-spacing="1.5" fill="currentColor">PRAXIS</text>
+    <text x="1" y="36" font-family="'Manrope', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="600" font-size="8.5" letter-spacing="4.5" fill="#8D98A5">GROWTH</text>
+  </g>
+</svg>
