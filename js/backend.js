@@ -656,11 +656,9 @@
       errors.especialidad = errDict.especialidad;
     }
 
-    // Mensaje
+    // Mensaje (Opcional para primer contacto)
     const rawMensaje = (data.mensaje || '').trim();
-    if (!rawMensaje) {
-      errors.mensaje = errDict.mensaje;
-    } else if (rawMensaje.length < 10) {
+    if (rawMensaje && rawMensaje.length < 5) {
       errors.mensaje = errDict.mensajeMin;
     }
 

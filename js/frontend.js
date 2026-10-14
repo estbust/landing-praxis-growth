@@ -288,8 +288,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const lblMensaje = document.querySelector('label[for="mensaje"]');
     const inputMensaje = document.getElementById('mensaje');
-    if (lblMensaje) lblMensaje.innerHTML = `${dict.booking.form.messageLabel} <span class="req">*</span>`;
-    if (inputMensaje) inputMensaje.placeholder = dict.booking.form.messagePlaceholder;
+    if (lblMensaje) {
+      const optText = activeLang === 'en' ? '(Optional)' : '(Opcional)';
+      lblMensaje.innerHTML = `${dict.booking.form.messageLabel} <span class="opt-label" style="color: var(--text-muted); font-size: 0.85em;">${optText}</span>`;
+    }
+    if (inputMensaje) {
+      inputMensaje.placeholder = dict.booking.form.messagePlaceholder;
+      inputMensaje.removeAttribute('required');
+    }
 
     const submitBtn = document.getElementById('submitBookingBtn');
     if (submitBtn && !submitBtn.classList.contains('is-loading')) {

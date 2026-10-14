@@ -363,6 +363,10 @@ h3 {
   list-style: none;
 }
 
+.mobile-cta-item {
+  display: none;
+}
+
 .nav-link {
   font-family: var(--font-heading);
   font-size: 0.95rem;
@@ -534,6 +538,7 @@ h3 {
   border: 2px solid var(--color-navy);
   margin-left: -8px;
   font-size: 0.95rem;
+  color: var(--color-verde);
 }
 
 .trust-avatar:first-child {
